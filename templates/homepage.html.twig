@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% import"macros/input.html.twig" as forms %}
+{% block body %}
+    <p>{{ forms.input('username') }}</p>
+    <p>{{ forms.input('password', null, 'password') }}</p>
+{% endblock body %}
